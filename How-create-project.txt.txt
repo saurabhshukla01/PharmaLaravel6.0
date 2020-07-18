@@ -1,0 +1,1009 @@
+	How Can Create New Project In Laravel 6.0 (Full project Step by step) User Use all steps and commands : 
+
+#######################################
+
+Uses Link : (important url how can create project in laravel)
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+https://appdividend.com/2019/09/12/laravel-6-crud-example-laravel-6-tutorial-for-beginners/
+https://laravel.com/docs/7.x/installation
+Important url code with Laravel project :  https://morioh.com/p/06f92a80675c
+
+https://www.youtube.com/watch?v=xHbSN36NyKE&list=PLLUtELdNs2ZaHaFmydqjcQ-YyeQ19Cd6u&index=5
+
+
+#######################################
+
+*****************************************************************
+
+Important Commands in Laravel Project 6.0 Create Admin Panel :
+
+Laravel Projects commands using Her projects : 
+
+
+If I want search what is using command in cmd prompt :
+
+How to search history of yours cmd prompts :
+
+$ doskey /history
+
+*************************************************************
+How to create Projects in Laravel : 
+
+composer global require laravel/installer
+composer create-project laravel/laravel phramaLaravel
+cd xampp
+cd htdocs
+cd phramaLaravel
+npm install
+npm install -g npm
+****************************************
+Database Connections in (.env files in Laravel project)
+
+setup database file :
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password
+
+****************************************
+php artisan serve
+composer require laravel/ui
+php artisan serve
+php artisan ui:auth
+php artisan migrate
+php artisan serve
+php artisan make:migration create_admins_table
+php artisan migrate
+php artisan make:model Admin
+php artisan make:middleware Admin
+php artisan make:controller AdminController
+php artisan make:controller Admin/AdminController
+php artisan make:seeder AdminsTableSeeder
+composer dump-autoload
+php artisan db:seed
+doskey /history
+
+
+***************************************
+*****************************************************************
+
+All Projects Command here (use in project)
+
+Composer Install command :
+
+# composer global require laravel/installer
+Project  Create Command in laravel 6.0 in version of php 7.2 or less than  :
+#   composer create-project laravel/laravel project-name
+				Or
+#  composer create-project --prefer-dist laravel/laravel Project-name
+				Or 
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+Go to project directory : 
+# cd project-name
+After start server command :
+#  php artisan serve
+After start server You can open her project in localhost with port :
+Project Url :  http://127.0.0.1:8000
+
+***********************************************************************************
+
+How To add All Project Based Steps : 
+
+   	Laravel Project Step How to create Project In Laravel 6.0
+
+
+Uses Link :
+
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+   			 
+   			 
+1) Step 1 : how to install Composer before creating the Laravel project.
+cmd command is user enter xampp htdocs dir :
+
+cmd#   composer global require laravel/installer
+
+2) Step 2 : Create New project (project name) Like : project1
+
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+cmd#   composer create-project --prefer-dist laravel/laravel pharmaLaravel
+   	 or
+
+cmd#   composer create-project laravel/laravel project-name
+   	 or
+
+cmd#   composer create-project laravel/laravel="6.*" pharma-laravel
+
+3)   cd pharma-laravel;  or cd Project-name  or  cd pharmaLaravel
+
+cmd#   php artisan serve   (server start in cmd command after start this you can open her project).
+
+show project dir.
+
+################################################################
+
+Project Url :  http://127.0.0.1:8000
+
+**********************************************************************************
+You need to install the frontend dependencies using the following command.
+
+Install npm in laravel project :
+
+#   npm install
+#   npm install -g npm
+
+Step 1: Configure the MySQL Database : 
+
+Create Database and setup in (.env file) in Laravel project  (setup database file in Laravel project)
+
+setup database file : 
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password
+
+you can able to generate the tables in the database using the following command.
+
+After migrate table create automatically .
+
+# php artisan migrate
+
+step 2: How to create View page in laravel project.
+
+# first create her assets file in public folder and after create new files in resource/views inside (folder is layout/commom.blade.php) files and create new file in views index.php file then both file # layout/common.blade.php file extends in the index page.
+
+Ex : 
+
+layout/common.blade.php
+
+header
+         <div id="main">
+            @yield('main')
+         </div>
+footer
+
+index.blade.php 
+
+
+@extends('userview.layout.common')
+@section('main')
+@section('title', 'Home')
+	<div class="main">
+		body part code
+	</div>
+@endsection
+
+
+create : route/web.php
+
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+note : set page where is created insert her location.
+
+now load your view page in same url please visit it easy
+
+url is : http://127.0.0.1:8000/admin
+
+*****************************************************************
+Step 4 : User want to create new login , register , password in user login in laravel :
+
+#cmd :   composer require laravel/ui
+
+created Successfully your user authentication in Laravel.
+
+Create simple auth in Laravel Project .
+
+#cmd :  php artisan ui:auth
+
+*****************************************************************
+Que : How to create Multiple Auth in Laravel :  
+
+Guards for admin And Auth for users , authentication mutlti in laravel
+
+Steps : 
+
+1) First create Admins table in Your Project .
+
+#cmd :   php artisan make:migration create_admins_table
+
+create_admin_migaration file using the help of users file ..
+
+Ex : 
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAdminsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('admins', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('type');
+            $table->string('mobile');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->string('image');
+            $table->integer('status');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('admins');
+    }
+}
+
+**********************
+
+After Run Another Command : 
+
+#cmd :  php artisan migrate
+
+Your admins Tables created Successfully.
+
+*****************************
+
+After Create Admin Model Using this Command in Laravel .
+
+#cmd :  php artisan make:model Admin
+
+created your model Admin successfully.
+
+App/Admin.php (In auth folder this is model file ) :
+
+Ex :
+
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Admin extends Authenticatable
+{
+    // Admin Model data created fields
+    use Notifiable;
+    protected $guard ='admin';
+    protected $fillable =[
+    	'name','email','password',
+    ],
+    protected $hidden = [
+    	'password','remember_token',
+    ],
+}
+
+
+**************************
+
+Doing some settings and Created Middleware and settings to change in laravel project :
+
+Goto to config folder / auth.php file (do some changes in this files ) : 
+
+Auth.php files : 
+
+	'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+    ],
+	
+	
+    'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
+    ],
+
+
+
+******************************
+
+After Create middleware in Laravel project : 
+
+Using this commands :
+
+#cmd :  php artisan make:middleware Admin
+
+
+================================
+
+Changes with (auth/kernel.php) : =
+
+Ex : 
+protected $routeMiddleware = [
+
+'admin' => \App\Http\Middleware\Admin::class,
+
+],
+
+=================================
+
+Create Controller files : 
+
+#cmd ==>    Using this command craeted Controller .
+
+php artisan make:controller Admin/AdminController
+
+created controller in Admin/AdminController.php files : 
+
+
+Code typing here :
+
+Ex : 
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login()
+    {
+        return view('admin.admin_login');
+    }
+}
+
+
+*********************************
+
+Define routes : (routes/web.php file )
+
+Ex :  
+
+// define all urls here : 
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+	});	
+}); 
+
+*****************************************************************
+
+After Created new Code here :
+
+Que :  How to working is seeder In Admins Table data ?
+
+#cmd :  php artisan make:seeder AdminsTablesSeeder
+
+Seeder created successfully.
+
+*********************************
+
+database folder/AdminsTableSeeder.php  files :
+
+Ex : code here
+
+
+*******************
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'','image'=>'','status'=>1],
+    	];
+
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);
+    		
+    	}
+    }
+}
+
+
+
+*******************
+
+Create Next code :
+
+database/seeds/DatabaseSeeder.php files :
+
+Code here 
+
+Ex : 
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // $this->call(UserSeeder::class);
+        $this->call(AdminsTableSeeder::class);
+    }
+}
+
+
+*********************************************
+
+Goto to models files :
+
+Admin.php in models files changes code is :
+
+Ex : Code Here :
+
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Admin extends Authenticatable
+{
+    // Admin Model data created fields
+    use Notifiable;
+    protected $guard ='admin';
+    protected $fillable =[
+    	'name','type','mobile','email','password','image','status','created_at','updated_at',
+    ];
+    protected $hidden = [
+    	'password','remember_token',
+    ];
+}
+
+
+**************************************
+
+After run this commands data is instered in Your database table automatically using this commands :
+
+This is command dump your files in your database table data .
+
+#cmd  :  composer dump-autoload 
+After using second command here :
+
+#cmd  :  php artisan db:seed
+
+after use this commands return :
+
+
+So intersted data successfully in yours admins tables.
+
+
+##################################
+
+You are running Composer with SSL/TLS protection disabled.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fideloper/proxy
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/tinker
+Discovered Package: laravel/ui
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+Generated optimized autoload files containing 4426 classes
+
+##################################
+
+Returns in Cmd prompt :
+
+Seeding: AdminsTableSeeder
+Seeded:  AdminsTableSeeder (0.07 seconds)
+Database seeding completed successfully.
+
+##################################
+
+Complete this yours data inserted in yours admins tables please check it.
+
+Que :  How to create admin password in Laravel :
+
+how to create Hash password in Laravel :
+
+Using Controller :
+
+**************************
+
+Admin/AdminController.php : 
+
+Code  :
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login()
+    {
+    	//echo $password= Hash::make('12345678');die;
+        return view('admin.admin_login');
+    }
+}
+
+*****************************
+
+After Update her Database/seeds/AdminTableSeeder.php : 
+
+Code changes :
+
+Ex :
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    	];
+
+    	DB::table('admins')->insert($adminRecords);
+
+    	/*
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);	
+    	}
+    	*/
+    }
+}
+
+
+*************************
+
+Run The again command :  
+
+#cmd  :   php artisan db:seed
+
+Now recoard inserted successfully please check it in Laravel project.
+
+
+Your login panel is working :
+
+UserEmail :  admin@gmail.com
+Password :   12345678   (Hash Password is :  $2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu)
+
+Please check it is working or not.
+
+####################################
+
+How to add multiple Data in inserted Tables using seeds In laravel :
+
+Code here in :  database/seeds/AdminTableSeeder.php ==>
+
+Ex : 
+
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    		['id'=>2,'name'=>'saurabh','type'=>'subadmin','mobile'=>'7290944755','email'=>'saurabh@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    		['id'=>3,'name'=>'abhi','type'=>'subadmin','mobile'=>'7290944755','email'=>'abhi@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    	];
+
+    	DB::table('admins')->insert($adminRecords);
+
+    	/*
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);	
+    	}
+    	*/
+    }
+}
+
+*****************************
+
+After using commands :  
+
+#cmd  :  php artisan db:seed
+
+successfully inserted your data in database yours admins table.
+Please check it.
+
+
+####################################
+
+*****************************************************************
+Que : How to create Dashboard Page After Login User , and Logout Click so user send to login page ?
+
+Solutions : 
+
+created AdminController in Admin folder :
+
+Admin/AdminController.php file :
+
+Code Here :
+
+**************
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+//use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+    		//echo "<pre>"; print_r($data);die();
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+}
+
+**************
+
+After Created : 
+
+view/admin/admin_login.blade.php files :
+
+Code here :
+
+**************
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Login Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{url('plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{{url('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{url('css/admin_css/adminlte.min.css')}}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="{{url('/')}}"><b>Admin</b>Panel</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      @if(Session::has('error_message'))
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ Session::get('error_message') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      @endif
+      <form action="{{url('/admin')}}" method="post">@csrf
+        <div class="input-group mb-3">
+          <input name="email" id="email" type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input  name="password" id="password" type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{{url('plugins/jquery/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{url('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{url('js/admin_js/adminlte.min.js')}}"></script>
+
+</body>
+</html>
+
+**************
+
+Define Route/web.php ==>
+
+Using this created Her urls : 
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('logout','AdminController@logout');
+	});	
+});
+
+*****************************************************************
+
+Urls :  
+
+http://127.0.0.1:8000/admin
+http://127.0.0.1:8000/admin/dashboard
+http://127.0.0.1:8000/admin/logout
+
+
+*****************************************************************
+
+Now How to created Your models steps : 
+
+Step 3: Create the model and migration files :
+
+Type the following command to create a model and migration files.
+
+#  php artisan make:model Show -m
+
+
+ 
+
+
+	
+
+
+
