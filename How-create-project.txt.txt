@@ -1,0 +1,3598 @@
+
+
+	How Can Create New Project In Laravel 6.0 (Full project Step by step) User Use all steps and commands : 
+
+#######################################
+
+project source code : Github link :  https://github.com/saurabhshukla01/PharmaLaravel6.0
+
+Uses Link : (important url how can create project in laravel)
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+https://appdividend.com/2019/09/12/laravel-6-crud-example-laravel-6-tutorial-for-beginners/
+https://laravel.com/docs/7.x/installation
+
+
+Uses Link : (important url how can create project in laravel)
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+https://appdividend.com/2019/09/12/laravel-6-crud-example-laravel-6-tutorial-for-beginners/
+https://laravel.com/docs/7.x/installation
+Important url code with Laravel project :  https://morioh.com/p/06f92a80675c
+
+https://www.youtube.com/watch?v=xHbSN36NyKE&list=PLLUtELdNs2ZaHaFmydqjcQ-YyeQ19Cd6u&index=5
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+// How to create map in contact table :
+
+step: 
+
+1) open the google map link 
+2) search your location
+3) share add embed location
+4) copy add embed location
+5) img src path ( your embed loaction and paste the same src path).
+
+links :
+
+1) https://www.google.co.in/maps
+2) https://www.google.co.in/maps/@27.141237,80.8833819,7z
+3) embed a map link :
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635689.793072721!2d80.8833819!3d27.141237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1595681628416!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+paste all where you set map then paste it.
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#######################################
+
+*****************************************************************
+
+Important Commands in Laravel Project 6.0 Create Admin Panel :
+
+Laravel Projects commands using Her projects : 
+
+
+If I want search what is using command in cmd prompt :
+
+How to search history of yours cmd prompts :
+
+$ doskey /history
+
+*************************************************************
+How to create Projects in Laravel : 
+
+composer global require laravel/installer
+composer create-project laravel/laravel phramaLaravel
+cd xampp
+cd htdocs
+cd phramaLaravel
+npm install
+npm install -g npm
+****************************************
+Database Connections in (.env files in Laravel project)
+
+setup database file :
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password
+
+****************************************
+php artisan serve
+composer require laravel/ui
+php artisan serve
+php artisan ui:auth
+php artisan migrate
+php artisan serve
+php artisan make:migration create_admins_table
+php artisan migrate
+php artisan make:model Admin
+php artisan make:middleware Admin
+php artisan make:controller AdminController
+php artisan make:controller Admin/AdminController
+php artisan make:seeder AdminsTableSeeder
+composer dump-autoload
+php artisan db:seed
+doskey /history
+php artisan make:migration create_sections_table
+php artisan migrate
+php artisan make:seeder SectionsTablesSeeder
+php artisan make:model Section
+php artisan make:controller Admin/SectionController
+php artisan db::seed
+php artisan db:seed
+php artisan make:seeder SectionsTableSeeder
+php artisan db:seed
+doskey /history
+php artisan make:migration create_categories_table
+php artisan migrate
+php artisan make:model Category
+php artisan make:controller Admin/CategoryController
+php artisan make:seeder CategoryTableSeeder
+php artisan db:seed
+doskey /history
+
+
+***************************************
+*****************************************************************
+
+All Projects Command here (use in project)
+
+Composer Install command :
+
+# composer global require laravel/installer
+Project  Create Command in laravel 6.0 in version of php 7.2 or less than  :
+#   composer create-project laravel/laravel project-name
+				Or
+#  composer create-project --prefer-dist laravel/laravel Project-name
+				Or 
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+Go to project directory : 
+# cd project-name
+After start server command :
+#  php artisan serve
+After start server You can open her project in localhost with port :
+Project Url :  http://127.0.0.1:8000
+
+***********************************************************************************
+
+How To add All Project Based Steps : 
+
+   	Laravel Project Step How to create Project In Laravel 6.0
+
+
+Uses Link :
+
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+   			 
+   			 
+1) Step 1 : how to install Composer before creating the Laravel project.
+cmd command is user enter xampp htdocs dir :
+
+cmd#   composer global require laravel/installer
+
+2) Step 2 : Create New project (project name) Like : project1
+
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+cmd#   composer create-project --prefer-dist laravel/laravel pharmaLaravel
+   	 or
+
+cmd#   composer create-project laravel/laravel project-name
+   	 or
+
+cmd#   composer create-project laravel/laravel="6.*" pharma-laravel
+
+3)   cd pharma-laravel;  or cd Project-name  or  cd pharmaLaravel
+
+cmd#   php artisan serve   (server start in cmd command after start this you can open her project).
+
+show project dir.
+
+################################################################
+
+Project Url :  http://127.0.0.1:8000
+
+**********************************************************************************
+You need to install the frontend dependencies using the following command.
+
+Install npm in laravel project :
+
+#   npm install
+#   npm install -g npm
+
+Step 1: Configure the MySQL Database : 
+
+Create Database and setup in (.env file) in Laravel project  (setup database file in Laravel project)
+
+setup database file : 
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password
+
+you can able to generate the tables in the database using the following command.
+
+After migrate table create automatically .
+
+# php artisan migrate
+
+step 2: How to create View page in laravel project.
+
+# first create her assets file in public folder and after create new files in resource/views inside (folder is layout/commom.blade.php) files and create new file in views index.php file then both file # layout/common.blade.php file extends in the index page.
+
+Ex : 
+
+layout/common.blade.php
+
+header
+         <div id="main">
+            @yield('main')
+         </div>
+footer
+
+index.blade.php 
+
+
+@extends('userview.layout.common')
+@section('main')
+@section('title', 'Home')
+	<div class="main">
+		body part code
+	</div>
+@endsection
+
+
+create : route/web.php
+
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+note : set page where is created insert her location.
+
+now load your view page in same url please visit it easy
+
+url is : http://127.0.0.1:8000/admin
+
+*****************************************************************
+Step 4 : User want to create new login , register , password in user login in laravel :
+
+#cmd :   composer require laravel/ui
+
+created Successfully your user authentication in Laravel.
+
+Create simple auth in Laravel Project .
+
+#cmd :  php artisan ui:auth
+
+*****************************************************************
+Que : How to create Multiple Auth in Laravel :  
+
+Guards for admin And Auth for users , authentication mutlti in laravel
+
+Steps : 
+
+1) First create Admins table in Your Project .
+
+#cmd :   php artisan make:migration create_admins_table
+
+create_admin_migaration file using the help of users file ..
+
+Ex : 
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAdminsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('admins', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('type');
+            $table->string('mobile');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->string('image');
+            $table->integer('status');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('admins');
+    }
+}
+
+**********************
+
+After Run Another Command : 
+
+#cmd :  php artisan migrate
+
+Your admins Tables created Successfully.
+
+*****************************
+
+After Create Admin Model Using this Command in Laravel .
+
+#cmd :  php artisan make:model Admin
+
+created your model Admin successfully.
+
+App/Admin.php (In auth folder this is model file ) :
+
+Ex :
+
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Admin extends Authenticatable
+{
+    // Admin Model data created fields
+    use Notifiable;
+    protected $guard ='admin';
+    protected $fillable =[
+    	'name','email','password',
+    ],
+    protected $hidden = [
+    	'password','remember_token',
+    ],
+}
+
+
+**************************
+
+Doing some settings and Created Middleware and settings to change in laravel project :
+
+Goto to config folder / auth.php file (do some changes in this files ) : 
+
+Auth.php files : 
+
+	'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+    ],
+	
+	
+    'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
+    ],
+
+
+
+******************************
+
+After Create middleware in Laravel project : 
+
+Using this commands :
+
+#cmd :  php artisan make:middleware Admin
+
+
+================================
+
+Changes with (auth/kernel.php) : =
+
+Ex : 
+protected $routeMiddleware = [
+
+'admin' => \App\Http\Middleware\Admin::class,
+
+],
+
+=================================
+
+Create Controller files : 
+
+#cmd ==>    Using this command craeted Controller .
+
+php artisan make:controller Admin/AdminController
+
+created controller in Admin/AdminController.php files : 
+
+
+Code typing here :
+
+Ex : 
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login()
+    {
+        return view('admin.admin_login');
+    }
+}
+
+
+*********************************
+
+Define routes : (routes/web.php file )
+
+Ex :  
+
+// define all urls here : 
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+	});	
+}); 
+
+*****************************************************************
+
+After Created new Code here :
+
+Que :  How to working is seeder In Admins Table data ?
+
+#cmd :  php artisan make:seeder AdminsTablesSeeder
+
+Seeder created successfully.
+
+*********************************
+
+database folder/AdminsTableSeeder.php  files :
+
+Ex : code here
+
+
+*******************
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'','image'=>'','status'=>1],
+    	];
+
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);
+    		
+    	}
+    }
+}
+
+
+
+*******************
+
+Create Next code :
+
+database/seeds/DatabaseSeeder.php files :
+
+Code here 
+
+Ex : 
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // $this->call(UserSeeder::class);
+        $this->call(AdminsTableSeeder::class);
+    }
+}
+
+
+*********************************************
+
+Goto to models files :
+
+Admin.php in models files changes code is :
+
+Ex : Code Here :
+
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Admin extends Authenticatable
+{
+    // Admin Model data created fields
+    use Notifiable;
+    protected $guard ='admin';
+    protected $fillable =[
+    	'name','type','mobile','email','password','image','status','created_at','updated_at',
+    ];
+    protected $hidden = [
+    	'password','remember_token',
+    ];
+}
+
+
+**************************************
+
+After run this commands data is instered in Your database table automatically using this commands :
+
+This is command dump your files in your database table data .
+
+#cmd  :  composer dump-autoload 
+After using second command here :
+
+#cmd  :  php artisan db:seed
+
+after use this commands return :
+
+
+So intersted data successfully in yours admins tables.
+
+
+##################################
+
+You are running Composer with SSL/TLS protection disabled.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fideloper/proxy
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/tinker
+Discovered Package: laravel/ui
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+Generated optimized autoload files containing 4426 classes
+
+##################################
+
+Returns in Cmd prompt :
+
+Seeding: AdminsTableSeeder
+Seeded:  AdminsTableSeeder (0.07 seconds)
+Database seeding completed successfully.
+
+##################################
+
+Complete this yours data inserted in yours admins tables please check it.
+
+Que :  How to create admin password in Laravel :
+
+how to create Hash password in Laravel :
+
+Using Controller :
+
+**************************
+
+Admin/AdminController.php : 
+
+Code  :
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login()
+    {
+    	//echo $password= Hash::make('12345678');die;
+        return view('admin.admin_login');
+    }
+}
+
+*****************************
+
+After Update her Database/seeds/AdminTableSeeder.php : 
+
+Code changes :
+
+Ex :
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    	];
+
+    	DB::table('admins')->insert($adminRecords);
+
+    	/*
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);	
+    	}
+    	*/
+    }
+}
+
+
+*************************
+
+Run The again command :  
+
+#cmd  :   php artisan db:seed
+
+Now recoard inserted successfully please check it in Laravel project.
+
+
+Your login panel is working :
+
+UserEmail :  admin@gmail.com
+Password :   12345678   (Hash Password is :  $2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu)
+
+Please check it is working or not.
+
+####################################
+
+How to add multiple Data in inserted Tables using seeds In laravel :
+
+Code here in :  database/seeds/AdminTableSeeder.php ==>
+
+Ex : 
+
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AdminsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Date craeted && Inserted Data in Admin Tables Using this seeder
+
+    	DB::table('admins')->delete();
+    	$adminRecords =[
+    		['id'=>1,'name'=>'admin','type'=>'admin','mobile'=>'7290944755','email'=>'admin@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    		['id'=>2,'name'=>'saurabh','type'=>'subadmin','mobile'=>'7290944755','email'=>'saurabh@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    		['id'=>3,'name'=>'abhi','type'=>'subadmin','mobile'=>'7290944755','email'=>'abhi@gmail.com','password'=>'$2y$10$8z6zKNzRISpsCtt3UBMofu71qmEGLdYUM2shP/.adUWSDx.cWE9Nu','image'=>'','status'=>1],
+    	];
+
+    	DB::table('admins')->insert($adminRecords);
+
+    	/*
+    	foreach ($adminRecords as $key => $record) {
+    		\App\Admin::create($record);	
+    	}
+    	*/
+    }
+}
+
+*****************************
+
+After using commands :  
+
+#cmd  :  php artisan db:seed
+
+successfully inserted your data in database yours admins table.
+Please check it.
+
+
+####################################
+
+*****************************************************************
+Que : How to create Dashboard Page After Login User , and Logout Click so user send to login page ?
+
+Solutions : 
+
+created AdminController in Admin folder :
+
+Admin/AdminController.php file :
+
+Code Here :
+
+**************
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+    		//echo "<pre>"; print_r($data);die();
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+}
+
+**************
+
+After Created : 
+
+view/admin/admin_login.blade.php files :
+
+Code here :
+
+**************
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Login Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{url('plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{{url('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{url('css/admin_css/adminlte.min.css')}}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="{{url('/')}}"><b>Admin</b>Panel</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      @if(Session::has('error_message'))
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ Session::get('error_message') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      @endif
+      <form action="{{url('/admin')}}" method="post">@csrf
+        <div class="input-group mb-3">
+          <input name="email" id="email" type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input  name="password" id="password" type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{{url('plugins/jquery/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{url('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{url('js/admin_js/adminlte.min.js')}}"></script>
+
+</body>
+</html>
+
+**************
+
+Define Route/web.php ==>
+
+Using this created Her urls : 
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('logout','AdminController@logout');
+	});	
+});
+
+*****************************************************************
+
+Urls :  
+
+http://127.0.0.1:8000/admin
+http://127.0.0.1:8000/admin/dashboard
+http://127.0.0.1:8000/admin/logout
+
+*****************************************************************
+
+Que : How to create error in laravel project :
+
+changes in controller :
+
+Admin/AdminController.php files 
+
+code here  :
+
+Ex : 
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use App\Admin;
+//use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function settings()
+    {
+        //echo "<pre>";print_r(Auth::guard('admin')->user());die();
+        //Auth::guard('admin')->user()->id;
+        $adminDetails = Admin::where('email',Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings')->with(compact('adminDetails'));
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+
+    		//echo "<pre>"; print_r($data);die();
+
+            /*
+            //valiadate Error Message in Laravel
+            $validateddata = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);
+            */
+
+            // How to create Custom message In Laravel 
+
+            $rules = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+
+            $customMessage = [
+                'email.required' => 'Email Address Must be Required',
+                'email.email' => 'Valid Email is required',
+                'password.required' => 'Password Must be Required', 
+            ];
+
+            $this->validate($request,$rules,$customMessage);
+
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+}
+
+
+***************************************
+
+Changes in blade php files :
+
+views/admin/admin_login.blade.php ==>
+
+code here :
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Login Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{url('plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{{url('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{url('css/admin_css/adminlte.min.css')}}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="{{url('/')}}"><b>Admin</b>Panel</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      @if(Session::has('error_message'))
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <label class="m-auto"> {{ Session::get('error_message') }} </label>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      @endif
+
+      @if ($errors->any())
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @foreach ($errors->all() as $error)
+                <label class="m-auto"> {{ $error }} </label>
+            @endforeach
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+      @endif
+
+      <form action="{{url('/admin')}}" method="post">@csrf
+        <div class="input-group mb-3">
+          <input name="email" id="email" type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input  name="password" id="password" type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{{url('plugins/jquery/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{url('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{url('js/admin_js/adminlte.min.js')}}"></script>
+
+</body>
+</html>
+
+
+********************************
+
+Que :  How to get data and featch data with Admin user login data :
+
+Solutions :
+
+changes in Amdin/adminController.php files  :
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use App\Admin;
+//use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function settings()
+    {
+        //echo "<pre>";print_r(Auth::guard('admin')->user());die();
+        //Auth::guard('admin')->user()->id;
+        $adminDetails = Admin::where('email',Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings')->with(compact('adminDetails'));
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+
+    		//echo "<pre>"; print_r($data);die();
+
+            /*
+            //valiadate Error Message in Laravel
+            $validateddata = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);
+            */
+
+            // How to create Custom message In Laravel 
+
+            $rules = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+
+            $customMessage = [
+                'email.required' => 'Email Address Must be Required',
+                'email.email' => 'Valid Email is required',
+                'password.required' => 'Password Must be Required', 
+            ];
+
+            $this->validate($request,$rules,$customMessage);
+
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+}
+
+
+________________________
+
+create url link in route/web.php files : 
+
+Route:get('settings','AdminController@settings);
+
+________________________
+
+Create new html file (admin/admin_settings.blade.php) ==>
+
+code here :
+
+After show and featch data here :
+
+Ex :
+
+@extends('layouts.admin_layout.admin_layout')
+@section('content')
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <div class="content-header">
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="col-sm-6">
+               <h1 class="m-0 text-dark">Settings</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Home</a></li>
+                  <li class="breadcrumb-item active">Admin Settings</li>
+               </ol>
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+   </div>
+   <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Change Password</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputName">Admin Name</label>
+                    <input type="text" class="form-control" value="{{ $adminDetails->name }}"placeholder="Enter Admin Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Admin Email</label>
+                    <!--<input class="form-control" value="{{ Auth::guard('admin')->user()->email }}" readonly>-->
+                    <input class="form-control" value="{{ $adminDetails->email }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputtype">Admin Type</label>
+                    <input type="text" class="form-control" value="{{ $adminDetails->type }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Current Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Current Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">New Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter New Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Confirm New Password">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+@endsection
+
+__________________________________
+
+So get and featch data if admin login with email address .
+
+*****************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+________________________________ 
+
+Que :  #10 Make Advance E-com Website in Laravel 6 | Upgrade Laravel 6 to 7 | Upgrade E-com to Laravel 7.0
+
+How to upgarde Laravel 6.0 to Laravel 7.0 .
+
+Solutions :
+
+Check laravel project version commands : 
+
+#cmd :  php artisan --version
+
+# some changes with composer.json file in your project . with the help of (link : https://github.com/laravel/laravel )
+
+changes composer.json file And (app/Exceptions/Handler.php) files .
+
+After update Ui command in Larvel 6.0 to convert with Laravel 7.0 
+
+#cmd :  composer require laravel/ui "^2.0"
+
+#cmd :  Composer update
+
+#cmd :  php artisan --version
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+________________________________ 
+
+*****************************************************************
+
+Que : How To create Change Password using Ajax in Laravel 6/7 Project :
+
+Solutions :
+
+***********************
+
+create Some script and add this script in admin_layout.blade.php files : 
+
+view/layouts/admin_layout.blade.php files :
+
+code here :
+
+<body>
+	bottom code:
+	// Add this script in bottom in admin_layout.blade.php files.
+	<!-- Custom Admin script file -->
+    <script src="{{url('js/admin_js/admin_script.js')}}"></script>
+</body>
+</html>
+
+************************
+
+create script public/js/admin_js/admin_script.js   create file and code :
+
+code here =>
+________________________
+
+public/js/admin_js/admin_script.js
+
+-----------------
+
+$(document).ready(function () {
+	// Check Admin Password is Correct or not
+	$("#current_pwd").keyup(function(){
+
+		var current_pwd = $("#current_pwd").val();
+		//alert(current_pwd);
+		$.ajax({
+			type:'post',
+			url:'/admin/check-current-pwd',
+			data:{current_pwd:current_pwd},
+			success:function(resp){
+				//alert(resp);
+				if(resp=="false"){
+					$("#chkCurrentPwd").html("<font color=red> Current Password Is Incorrect </font>");
+				}else if(resp=="true"){
+					$("#chkCurrentPwd").html("<font color=green> Current Password Is Correct </font>");
+				}
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+})
+
+
+*************************
+
+I want to skip the csrf token the same page url is paste here in :
+
+middleware/VerifyCsrfToken.php file : 
+
+****************
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
+
+class VerifyCsrfToken extends Middleware
+{
+    /**
+     * The URIs that should be excluded from CSRF verification.
+     *
+     * @var array
+     */
+    protected $except = [
+        // using this we want csrf token is skip there (so add url here )
+        "/admin/check-current-pwd"        // add this url I want skip csrf token in same url page.
+    ];
+}
+
+
+***********************************
+
+Create Controller (Admin/AdminController.php )
+
+Code Here :
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use App\Admin;
+use Hash;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function settings()
+    {
+        //echo "<pre>";print_r(Auth::guard('admin')->user());die();
+        //Auth::guard('admin')->user()->id;
+        $adminDetails = Admin::where('email',Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings')->with(compact('adminDetails'));
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+
+    		//echo "<pre>"; print_r($data);die();
+
+            /*
+            //valiadate Error Message in Laravel
+            $validateddata = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);
+            */
+
+            // How to create Custom message In Laravel 
+
+            $rules = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+
+            $customMessage = [
+                'email.required' => 'Email Address Must be Required',
+                'email.email' => 'Valid Email is required',
+                'password.required' => 'Password Must be Required', 
+            ];
+
+            $this->validate($request,$rules,$customMessage);
+
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+
+    public function check_current_pwd(Request $request)
+    {
+        // check password code here 
+        $data = $request->all();
+        //echo "<pre>";print_r($data);
+        //echo "<pre>";print_r(Auth::guard('admin')->user()->password);
+        if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+            echo "true";
+        }else{
+            echo "false";
+        }
+
+    }
+
+    public function update_current_pwd(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            //echo "<pre>";print_r($data);die();
+            //Check If Current Password is Correct
+            if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+                //Check If New And Confirm Password is Matching
+                if($data['new_pwd']==$data['confirm_pwd']){
+                    Admin::where('id',Auth::guard('admin')->user()->id)->update(['password'=>bcrypt($data['new_pwd'])]);
+                    Session::flash('success_message','Password Updated Successfully !');
+                }else{
+                    Session::flash('error_message','New Password And Confirm Password Is not Matched');
+                }
+            }else{
+                Session::flash('error_message','Your Current Password Is Incorrect');
+            }
+            return redirect()->back();
+        }
+    }
+}
+
+
+**********************
+
+Update views/admin/admin_settings.blade.php files :
+
+code here :
+
+________________________
+
+@extends('layouts.admin_layout.admin_layout')
+@section('content')
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <div class="content-header">
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="col-sm-6">
+               <h1 class="m-0 text-dark">Settings</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Home</a></li>
+                  <li class="breadcrumb-item active">Admin Settings</li>
+               </ol>
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+   </div>
+   <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Change Password</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+
+              @if(Session::has('error_message'))
+                <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+                  <label class="m-auto"> {{ Session::get('error_message') }} </label>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              @endif
+
+              @if(Session::has('success_message'))
+                <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                  <label class="m-auto"> {{ Session::get('success_message') }} </label>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              @endif
+              <form role="form" method="post" action="{{url('/admin/update-current-pwd')}}" name="updatePasswordFrom" id="updatePasswordFrom">@csrf
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Admin Email</label>
+                    <!--<input class="form-control" value="{{ Auth::guard('admin')->user()->email }}" readonly>-->
+                    <input class="form-control" value="{{ $adminDetails->email }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputtype">Admin Type</label>
+                    <input type="text" class="form-control" value="{{ $adminDetails->type }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Current Password</label>
+                    <input type="password" class="form-control" name="current_pwd" id="current_pwd" placeholder="Enter Current Password" required>
+                    <span id="chkCurrentPwd"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">New Password</label>
+                    <input type="password" name="new_pwd" id="new_pwd" class="form-control" placeholder="Enter New Password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirm_pwd" id="confirm_pwd" placeholder="Enter Confirm New Password" required>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Change Password</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+@endsection
+
+
+
+
+**************************
+
+
+After the code Define the Route/web.php files  :
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('settings','AdminController@settings');
+		Route::get('logout','AdminController@logout');
+		Route::post('check-current-pwd','AdminController@check_current_pwd');
+		Route::post('update-current-pwd','AdminController@update_current_pwd');
+		
+	});	
+});
+
+
+************************
+
+After All code Check your Change Password is working fine .
+
+
+*****************************
+
+Que : How to Update Admin Details && Images ==>
+
+Images store command is : 
+
+#cmd :  composer require intervention/image
+
+*****************************************
+
+Solutions :
+
+Steps To updated Admin Details Using this step By step Code :
+ 
+
+Route/web.php file code : 
+
+*****************************
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('settings','AdminController@settings');
+		Route::get('logout','AdminController@logout');
+		Route::post('check-current-pwd','AdminController@check_current_pwd');
+		Route::post('update-current-pwd','AdminController@update_current_pwd');
+		Route::match(['get','post'],'update-admin-details','AdminController@UpdateAdminDetails');
+	});	
+});
+
+********************************
+
+
+Create Admin/AdminController.php file code : 
+
+********************************
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use App\Admin;
+use Hash;
+use Image;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        return view('admin.admin_dashboard');
+    }
+
+    public function settings()
+    {
+        //echo "<pre>";print_r(Auth::guard('admin')->user());die();
+        //Auth::guard('admin')->user()->id;
+        $adminDetails = Admin::where('email',Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings')->with(compact('adminDetails'));
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+
+    		//echo "<pre>"; print_r($data);die();
+
+            /*
+            //valiadate Error Message in Laravel
+            $validateddata = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);
+            */
+
+            // How to create Custom message In Laravel 
+
+            $rules = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+
+            $customMessage = [
+                'email.required' => 'Email Address Must be Required',
+                'email.email' => 'Valid Email is required',
+                'password.required' => 'Password Must be Required', 
+            ];
+
+            $this->validate($request,$rules,$customMessage);
+
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+
+    public function check_current_pwd(Request $request)
+    {
+        // check password code here 
+        $data = $request->all();
+        //echo "<pre>";print_r($data);
+        //echo "<pre>";print_r(Auth::guard('admin')->user()->password);
+        if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+            echo "true";
+        }else{
+            echo "false";
+        }
+
+    }
+
+    public function update_current_pwd(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            //echo "<pre>";print_r($data);die();
+            //Check If Current Password is Correct
+            if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+                //Check If New And Confirm Password is Matching
+                if($data['new_pwd']==$data['confirm_pwd']){
+                    Admin::where('id',Auth::guard('admin')->user()->id)->update(['password'=>bcrypt($data['new_pwd'])]);
+                    Session::flash('success_message','Password Updated Successfully !');
+                }else{
+                    Session::flash('error_message','New Password And Confirm Password Is not Matched');
+                }
+            }else{
+                Session::flash('error_message','Your Current Password Is Incorrect');
+            }
+            return redirect()->back();
+        }
+    }
+
+    public function UpdateAdminDetails(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            //echo "<pre>";print_r($data);die();
+            // check valiadtion and Custom message error
+            $rules = [
+                'admin_name' => 'required|regex:/^[\pL\s\-]+$/u',
+                'admin_mobile' => 'required|numeric',
+                'admin_image' => 'image|mimes:jpeg,png,jpg|max:2048',
+            ];
+            $customMessage = [
+                'admin_name.required' => "Admin Name Must be Required",
+                'admin_name.alpha' => "Valid Admin Name Must be Required",
+                'admin_mobile.required' => "Admin Mobile Must be Required",
+                'admin_mobile.numeric' => "Admin Mobile Must Be In Numeric Value"
+            ];
+            $this->validate($request,$rules,$customMessage);
+
+            //Upload Image In Laravel
+            if($request->hasFile('admin_image')){
+                $image_tmp = $request->file('admin_image');
+                if($image_tmp->isValid()){
+                    //Get Image Extension
+                    $extension = $image_tmp->getClientOriginalExtension();
+                    //Generate New Image Name
+                    $imageName = rand(111,999999).'.'.$extension;
+                    $imagePath = 'images/admin_images/admin_photos/'.$imageName;
+                    //Upload the Image
+                    Image::make($image_tmp)->save($imagePath);  
+                }
+
+            }else if(!empty($data['current_admin_image'])){
+                    $imageName = $data['current_admin_image'];
+
+            }else{
+                    $imageName ="avatar.png";
+            }
+
+            //Update Admin Details 
+            Admin::where('email',Auth::guard('admin')->user()->email)->update(['name'=> $data['admin_name'],'mobile'=> $data['admin_mobile'],'image'=> $imageName]);
+            Session::flash("success_message","Admin Details Updated Successfully !");
+            return redirect()->back();
+        }
+        return view('admin.update_admin_details');
+    }
+}
+
+
+*********************************
+	  
+views/admin/update_admin_details.blade.php files Codes : 
+
+*********************************
+
+@extends('layouts.admin_layout.admin_layout')
+@section('content')
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <div class="content-header">
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="col-sm-6">
+               <h1 class="m-0 text-dark">Settings</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Home</a></li>
+                  <li class="breadcrumb-item active">Admin Settings</li>
+               </ol>
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+   </div>
+   <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Update Admin Details</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+
+              @if(Session::has('error_message'))
+                <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+                  <label class="m-auto"> {{ Session::get('error_message') }} </label>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              @endif
+
+              @if(Session::has('success_message'))
+                <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                  <label class="m-auto"> {{ Session::get('success_message') }} </label>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              @endif
+
+              @if ($errors->any())
+                <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+                    @foreach ($errors->all() as $error)
+                        <label class="m-auto"> {{ $error }} </label>
+                    @endforeach
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              @endif
+              <form role="form" method="post" action="{{url('/admin/update-admin-details')}}" name="updateAdminDetails" id="updateAdminDetails" enctype="multipart/form-data">@csrf
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Admin Email</label>
+                    <input class="form-control" value="{{ Auth::guard('admin')->user()->email }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputtype">Admin Type</label>
+                    <input type="text" class="form-control" value="{{ Auth::guard('admin')->user()->type }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName">Admin Name</label>
+                    <input type="text" class="form-control" name="admin_name" id="admin_name" value="{{ Auth::guard('admin')->user()->name }}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName">Admin Mobile Number</label>
+                    <input type="text" class="form-control" name="admin_mobile" id="admin_mobile" value="{{ Auth::guard('admin')->user()->mobile }}" placeholder="Enter Mobile Number" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputImage">Admin Image</label>
+                    <input type="file" class="form-control" name="admin_image" id="admin_image">
+                    @if(!empty(Auth::guard('admin')->user()->image))
+                      <a target="_blank" href="{{ url('images/admin_images/admin_photos/'.Auth::guard('admin')->user()->image) }}">View Admin Profile Image</a>
+                      <input type="hidden" name="current_admin_image" value="{{ Auth::guard('admin')->user()->image }}">
+                    @endif
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Update Details</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+@endsection
+
+
+
+**********************************
+
+views/layouts/admin_slidebar.blade.php  files code is :
+
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+   <!-- Brand Logo -->
+   <a href="index3.html" class="brand-link">
+   <img src="{{asset('images/admin_images/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      style="opacity: .8">
+   <span class="brand-text font-weight-light">Admin Panel</span>
+   </a>
+   <!-- Sidebar -->
+   <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+         <div class="image">
+            <img src="{{asset('images/admin_images/admin_photos/'.Auth::guard('admin')->user()->image)}}" class="img-circle elevation-2" alt="User Pic">
+         </div>
+         <div class="info text-capitalize">
+            <a href="#" class="d-block">{{ Auth::guard('admin')->user()->name }}</a>
+         </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+               <a href="{{ url('/admin/dashboard') }}" class="nav-link active">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                     Dashboard
+                  </p>
+               </a>
+            </li>
+            <li class="nav-item has-treeview">
+               <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                     Settings
+                     <i class="fas fa-angle-left right"></i>
+                  </p>
+               </a>
+               <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/settings') }}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Password</p>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/update-admin-details') }}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Details</p>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item has-treeview">
+               <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>
+                     Forms
+                     <i class="fas fa-angle-left right"></i>
+                  </p>
+               </a>
+            </li>
+
+            <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+            <li class="nav-item">
+               <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Level 1</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+   </div>
+   <!-- /.sidebar -->
+</aside>
+
+********************************
+
+Successfully code data and Update your profile data successfully .
+
+********************************
+
+Que :  How to set Your active class in Laravel project :
+
+Solutions : 
+
+First create Controller in create session in put your Controller :
+
+Create Admin/Admin/AdminController.php 
+
+// how to create session in Controller in Laravel :
+
+steps : 
+
+file Admin/AdminController.php file code :
+
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Session;
+use Auth;
+use App\Admin;
+use Hash;
+use Image;
+
+class AdminController extends Controller
+{
+    // All Admin Controller Functions Define here 
+
+    public function dashboard()
+    {
+        Session::put('page','dashboard');
+        return view('admin.admin_dashboard');
+    }
+
+    public function settings()
+    {
+        Session::put('page','settings');
+        //echo "<pre>";print_r(Auth::guard('admin')->user());die();
+        //Auth::guard('admin')->user()->id;
+        $adminDetails = Admin::where('email',Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings')->with(compact('adminDetails'));
+    }
+
+    public function login(Request $request)
+    {
+    	//echo $password= Hash::make('12345678');die;
+    	if($request->isMethod('post')){
+    		$data = $request->all();
+
+    		//echo "<pre>"; print_r($data);die();
+
+            /*
+            //valiadate Error Message in Laravel
+            $validateddata = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);
+            */
+
+            // How to create Custom message In Laravel 
+
+            $rules = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+
+            $customMessage = [
+                'email.required' => 'Email Address Must be Required',
+                'email.email' => 'Valid Email is required',
+                'password.required' => 'Password Must be Required', 
+            ];
+
+            $this->validate($request,$rules,$customMessage);
+
+    		if(Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password']])){
+    			return redirect('admin/dashboard');
+    		}else{
+    			Session::flash('error_message','Invalid Email Or Password');
+    			return redirect()->back();
+    		}
+    	}
+        return view('admin.admin_login');
+    }
+
+    public function logout(){
+    	Auth::guard('admin')->logout();
+    	return redirect('/admin');
+    }
+
+    public function check_current_pwd(Request $request)
+    {
+        // check password code here 
+        $data = $request->all();
+        //echo "<pre>";print_r($data);
+        //echo "<pre>";print_r(Auth::guard('admin')->user()->password);
+        if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+            echo "true";
+        }else{
+            echo "false";
+        }
+
+    }
+
+    public function update_current_pwd(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            //echo "<pre>";print_r($data);die();
+            //Check If Current Password is Correct
+            if(Hash::check($data['current_pwd'],Auth::guard('admin')->user()->password)){
+                //Check If New And Confirm Password is Matching
+                if($data['new_pwd']==$data['confirm_pwd']){
+                    Admin::where('id',Auth::guard('admin')->user()->id)->update(['password'=>bcrypt($data['new_pwd'])]);
+                    Session::flash('success_message','Password Updated Successfully !');
+                }else{
+                    Session::flash('error_message','New Password And Confirm Password Is not Matched');
+                }
+            }else{
+                Session::flash('error_message','Your Current Password Is Incorrect');
+            }
+            return redirect()->back();
+        }
+    }
+
+    public function UpdateAdminDetails(Request $request){
+        Session::put('page','update-admin-details');
+        if($request->isMethod('post')){
+            $data = $request->all();
+            //echo "<pre>";print_r($data);die();
+            // check valiadtion and Custom message error
+            $rules = [
+                'admin_name' => 'required|regex:/^[\pL\s\-]+$/u',
+                'admin_mobile' => 'required|numeric',
+                'admin_image' => 'image|mimes:jpeg,png,jpg|max:2048',
+            ];
+            $customMessage = [
+                'admin_name.required' => "Admin Name Must be Required",
+                'admin_name.alpha' => "Valid Admin Name Must be Required",
+                'admin_mobile.required' => "Admin Mobile Must be Required",
+                'admin_mobile.numeric' => "Admin Mobile Must Be In Numeric Value"
+            ];
+            $this->validate($request,$rules,$customMessage);
+
+            //Upload Image In Laravel
+            if($request->hasFile('admin_image')){
+                $image_tmp = $request->file('admin_image');
+                if($image_tmp->isValid()){
+                    //Get Image Extension
+                    $extension = $image_tmp->getClientOriginalExtension();
+                    //Generate New Image Name
+                    $imageName = rand(111,999999).'.'.$extension;
+                    $imagePath = 'images/admin_images/admin_photos/'.$imageName;
+                    //Upload the Image
+                    //Image::make($image_tmp)->resize(300,400)->save($imagePath);
+                    Image::make($image_tmp)->save($imagePath);  
+                }
+
+            }else if(!empty($data['current_admin_image'])){
+                    $imageName = $data['current_admin_image'];
+
+            }else{
+                    $imageName ="avatar.png";
+            }
+
+            //Update Admin Details 
+            Admin::where('email',Auth::guard('admin')->user()->email)->update(['name'=> $data['admin_name'],'mobile'=> $data['admin_mobile'],'image'=> $imageName]);
+            Session::flash("success_message","Admin Details Updated Successfully !");
+            return redirect()->back();
+        }
+        return view('admin.update_admin_details');
+    }
+}
+
+	
+***************************
+
+After set condition in Your (views/admin/admin_slidbar.blade.php )
+
+Set conditions here :
+
+create code :   views/admin/admin_slidbar.blade.php
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+   <!-- Brand Logo -->
+   <a href="index3.html" class="brand-link">
+   <img src="{{asset('images/admin_images/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      style="opacity: .8">
+   <span class="brand-text font-weight-light">Admin Panel</span>
+   </a>
+   <!-- Sidebar -->
+   <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+         <div class="image">
+            <img src="{{asset('images/admin_images/admin_photos/'.Auth::guard('admin')->user()->image)}}" class="img-circle elevation-2" alt="User Pic">
+         </div>
+         <div class="info text-capitalize">
+            <a href="#" class="d-block">{{ Auth::guard('admin')->user()->name }}</a>
+         </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+            @if(Session::get('page')=="dashboard")
+               <?php $active = "active"; ?>
+            @else
+               <?php $active = ""; ?>
+            @endif
+            <li class="nav-item">
+               <a href="{{ url('/admin/dashboard') }}" class="nav-link {{ $active }}">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                     Dashboard
+                  </p>
+               </a>
+            </li>
+            @if(Session::get('page')=="settings" || Session::get('page')=="update-admin-details")
+               <?php $active = "active"; ?>
+            @else
+               <?php $active = ""; ?>
+            @endif
+            <li class="nav-item has-treeview menu-open">
+               <a href="#" class="nav-link {{ $active }}">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                     Settings
+                     <i class="fas fa-angle-left right"></i>
+                  </p>
+               </a>
+               <ul class="nav nav-treeview">
+                  @if(Session::get('page')=="settings")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/settings') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Password</p>
+                     </a>
+                  </li>
+                  @if(Session::get('page')=="update-admin-details")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/update-admin-details') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Details</p>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+   </div>
+   <!-- /.sidebar -->
+</aside>
+
+
+@@@@@@@@@@@@@@@@@@@@
+
+so finally set this condition and set your session in controller then get the data and view her site.
+active nav link is properly working ..
+
+*****************************************************************
+
+
+
+******************************************************************
+Now How to created Your models steps : 
+
+Step 3: Create the model and migration files :
+
+Type the following command to create a model and migration files.
+
+#  php artisan make:model Show -m
+
+
+ 
+******************************************
+
+Que :   How to create Sections Module in Admin Panel (I) | Migration | Seeding  ??
+
+Solution  :
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+We will first work on Sections module in which we will add Men, Women and Kids as Sections. Every section will have its own categories that we will work later on.
+
+In this video, we will create sections table with Migration and will add records into it with Seeding.
+
+We will also create controller and model for sections.
+
+1) Create sections table :-
+First of all, we will create sections table with migration. Create migration file with name create_sections_table for creating sections table with below columns :-
+id, name, status
+
+So, we will run below artisan command to create migration file for sections :-
+php artisan make:migration create_sections_table
+
+Open create_sections_table migration file and add all required columns mentioned earlier.
+
+Now, we will run below artisan command to create sections table with required columns :- 
+php artisan migrate
+
+2) Create Section model :-
+Create Section model by running below command :-
+php artisan make:model Section
+
+3) Create SectionController :-
+Create SectionController by running below command :-
+php artisan make:controller Admin/SectionController
+
+Now, We will create Seeding for sections table to insert sections like Men, Women and Kids from file.
+
+4) Writing Seeder / Create SectionsTableSeeder file :-
+First of all, we will generate seeder and create SectionsTableSeeder file where we will add records for sections table.
+
+Run below artisan command to generate Seeder and create SectionsTableSeeder file :-
+php artisan make:seeder SectionsTableSeeder
+
+Above command will create SectionsTableSeeder.php file at \database\seeds\
+
+Now open SectionsTableSeeder file and add record for section.
+
+5) Update DatabaseSeeder.php file :-
+Now update DatabaseSeeder.php file located at database/seeds/ to add SectionsTableSeeder class as shown in video.
+
+6) Run below command :-
+Now run below command that will finally insert records into sections table.
+php artisan db:seed
+
+In next video, we will display sections in admin panel and will also work on enable/disable any section from admin panel.
+
+
+_________________________________________________________________________________
+
+Create Sections Controller in Admin Folder :
+
+************************
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Section;
+use Session;
+
+class SectionController extends Controller
+{
+    public function sections(){
+    	Session::put('page','sections');
+    	$sections = Section::get();
+    	return view('admin.sections.sections')->with(compact('sections'));
+    }
+
+    public function updateSectionStatus(Request $request){
+    	if($request->ajax()){
+    		$data = $request->all();
+    		//echo "<pre>"; print_r($data);die();
+    		if($data['status']=="Active"){
+    			$status = 0;
+    		}else{
+    			$status = 1;
+    		}
+    		Section::where('id',$data['section_id'])->update(['status'=>$status]);
+    		return response()->json(['status'=>$status,'section_id'=>$data['section_id']]);
+    	}
+    }
+}
+
+
+************************
+
+define route/web.php ==>
+
+*********************
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('settings','AdminController@settings');
+		Route::get('logout','AdminController@logout');
+		Route::post('check-current-pwd','AdminController@check_current_pwd');
+		Route::post('update-current-pwd','AdminController@update_current_pwd');
+		Route::match(['get','post'],'update-admin-details','AdminController@UpdateAdminDetails');
+
+		//sections Routes
+		Route::get('sections','SectionController@sections');
+		Route::post('update-section-status','SectionController@updateSectionStatus');
+	});	
+});
+
+
+
+*********************
+
+Middleware/VerifyCsrfToken.php   ==>
+
+hide the url in protect variable :
+
+"/admin/update-section-status"
+
+
+**********************
+
+Create Blade file in ( views/admin/sections/sections.blade.php)
+
+**********************
+
+@extends('layouts.admin_layout.admin_layout')
+@section('content')
+<div class="content-wrapper">
+<!-- Main content -->
+	<div class="content-header">
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="col-sm-6">
+               <h1 class="m-0 text-dark">Catalogues</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Home</a></li>
+                  <li class="breadcrumb-item active">Sections</li>
+               </ol>
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+   </div>
+	<section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Sections</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="sections" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  @foreach($sections as $section)
+                  <tr>
+                    <td>{{ $section->id }}</td>
+                    <td>{{ $section->name }}</td>
+                    <td>
+                      @if($section->status ==1)
+                        <a class="updateSectionStatus" id="section-{{ $section->id }}" section_id="{{ $section->id }}" href="javascript:void(0)">Active</a>
+                      @else
+                        <a class="updateSectionStatus" id="section-{{ $section->id }}" section_id="{{ $section->id }}" href="javascript:void(0)">Inactive</a>
+                      @endif
+                    </td>
+                  </tr>
+                  @endforeach
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+	      <!-- /.container-fluid -->
+	</section>
+<!-- /.content -->
+</div>
+@endsection
+
+**********************
+
+Now working with public/js/Admin_js/admin_script.js    file code is :
+
+
+$(document).ready(function () {
+	// Check Admin Password is Correct or not
+	$("#current_pwd").keyup(function(){
+
+		var current_pwd = $("#current_pwd").val();
+		//alert(current_pwd);
+		$.ajax({
+			type:'post',
+			url:'/admin/check-current-pwd',
+			data:{current_pwd:current_pwd},
+			success:function(resp){
+				//alert(resp);
+				if(resp=="false"){
+					$("#chkCurrentPwd").html("<font color=red> Current Password Is Incorrect </font>");
+				}else if(resp=="true"){
+					$("#chkCurrentPwd").html("<font color=green> Current Password Is Correct </font>");
+				}
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+
+	// Update Status in Sections Table Active or Inactive
+	$(".updateSectionStatus").click(function(){
+		var status = $(this).text();
+		var section_id = $(this).attr("section_id");
+		//alert(status +"&&"+section_id);
+		$.ajax({
+			type:'post',
+			url:'/admin/update-section-status',
+			data:{status:status,section_id:section_id},
+			success:function(resp){
+				//alert(resp['status']);
+				//alert(resp['section_id']);
+				if(resp['status']==0){
+					$("#section-"+section_id).html("<a class='updateSectionStatus' href='javascript:void(0)'>Inactive</a>");
+				}else if(resp['status']==1){
+					$("#section-"+section_id).html("<a class='updateSectionStatus' href='javascript:void(0)'>Active</a>");
+				}
+
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+
+})
+
+
+**********************
+
+After create Link in  (views/admin_layout/admin_slidebar.blade.php)
+
+**********************
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+   <!-- Brand Logo -->
+   <a href="index3.html" class="brand-link">
+   <img src="{{asset('images/admin_images/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      style="opacity: .8">
+   <span class="brand-text font-weight-light">Admin Panel</span>
+   </a>
+   <!-- Sidebar -->
+   <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+         <div class="image">
+            <img src="{{asset('images/admin_images/admin_photos/'.Auth::guard('admin')->user()->image)}}" class="img-circle elevation-2" alt="User Pic">
+         </div>
+         <div class="info text-capitalize">
+            <a href="#" class="d-block">{{ Auth::guard('admin')->user()->name }}</a>
+         </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+            <!-- Dashboard Link Here -->
+            @if(Session::get('page')=="dashboard")
+               <?php $active = "active"; ?>
+            @else
+               <?php $active = ""; ?>
+            @endif
+            <li class="nav-item">
+               <a href="{{ url('/admin/dashboard') }}" class="nav-link {{ $active }}">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                     Dashboard
+                  </p>
+               </a>
+            </li>
+
+            <!-- Settings Links Here -->
+            @if(Session::get('page')=="settings" || Session::get('page')=="update-admin-details")
+               <?php $active = "active"; ?>
+            @else
+               <?php $active = ""; ?>
+            @endif
+            <li class="nav-item has-treeview menu-open">
+               <a href="#" class="nav-link {{ $active }}">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                     Settings
+                     <i class="fas fa-angle-left right"></i>
+                  </p>
+               </a>
+               <ul class="nav nav-treeview">
+                  @if(Session::get('page')=="settings")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/settings') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Password</p>
+                     </a>
+                  </li>
+                  @if(Session::get('page')=="update-admin-details")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/update-admin-details') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Update Admin Details</p>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+
+            <!-- Catalogues Links Here -->
+            @if(Session::get('page')=="sections" || Session::get('page')=="categories")
+               <?php $active = "active"; ?>
+            @else
+               <?php $active = ""; ?>
+            @endif
+            <li class="nav-item has-treeview menu-open">
+               <a href="#" class="nav-link {{ $active }}">
+                  <i class="nav-icon fas fa-bars"></i>
+                  <p>
+                     Catalogues
+                     <i class="fas fa-angle-left right"></i>
+                  </p>
+               </a>
+               <ul class="nav nav-treeview">
+                  @if(Session::get('page')=="sections")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/sections') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sections</p>
+                     </a>
+                  </li>
+                  @if(Session::get('page')=="categories")
+                     <?php $active = "active"; ?>
+                  @else
+                     <?php $active = ""; ?>
+                  @endif
+                  <li class="nav-item">
+                     <a href="{{ url('/admin/categories') }}" class="nav-link {{ $active }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Categories</p>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+   </div>
+   <!-- /.sidebar -->
+</aside>
+
+
+**************************
+
+After complete code to check in Status is active or inactive on click link please check it ...
+
+
+**************************
+
+Next :
+
+Que :  How to Create Categories section in Laravel (working with Categories new modules in Laravel 7.0)
+
+Solution: 
+
+first Create :
+
+commands : Run all commands On Cmd : 
+
+
+php artisan make:migration create_categories_table
+php artisan migrate
+php artisan make:model Category
+php artisan make:controller Admin/CategoryController
+php artisan make:seeder CategoryTableSeeder
+php artisan db:seed
+
+
+************************************
+
+First I want create (table with migration command ) :
+
+#cmd :  php artisan make:migration create_categories_table
+#cmd :  php artisan migrate
+#cmd :  php artisan make:model Category
+#cmd :  php artisan make:controller Admin/CategoryController
+All commands runs after update code in migrations files.
+
+After open this file in (database/migrations/create_categories_table.php files : )
+
+
+Updated here code user requirement :
+
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCategoriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->integer('parent_id');
+            $table->integer('section_id');
+            $table->string('category_name');
+            $table->string('category_image');
+            $table->float('category_discount');
+            $table->text('description');
+            $table->string('url');
+            $table->string('meta_title');
+            $table->string('meta_description');
+            $table->string('meta_keywords');
+            $table->tinyInteger('status');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('categories');
+    }
+}
+
+
+******************
+
+After Create seeder files : 
+
+#cmd :  php artisan make:seeder CategoryTableSeeder 
+
+Open this file in (seed/CategoryTableSeeder.php)  files : 
+
+Code here :
+
+<?php
+
+use Illuminate\Database\Seeder;
+use App\Category;
+
+class CategoryTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $categoryRecoard = [
+        	['id'=>1,'parent_id'=>0,'section_id'=>1,'category_name'=>'T-shirts','category_image'=>'','category_discount'=>0,'description'=>'','url'=>'T-shirts','meta_title'=>'','meta_description'=>'','meta_keywords'=>'','status'=>1],
+        	['id'=>2,'parent_id'=>1,'section_id'=>1,'category_name'=>'Casual T-shirts','category_image'=>'','category_discount'=>0,'description'=>'','url'=>'casual-T-shirts','meta_title'=>'','meta_description'=>'','meta_keywords'=>'','status'=>1]
+        ];
+
+        Category::insert($categoryRecoard);
+    }
+}
+
+
+***********************
+
+After call this file in (seed/DatabaseSeeder.php files ) : 
+
+Code  Update the same file is  :
+
+
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // $this->call(UserSeeder::class);
+        //$this->call(AdminsTableSeeder::class);
+        //$this->call(SectionsTableSeeder::class);
+        $this->call(CategoryTableSeeder::class);
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+After Run single command Your data inserted in your datatable category table .
+
+
+#cmd :  php artisan db:seed
+
+
+***********************************  Please Check your database  *****************************
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+	
+How to update status of categories table using Ajax : 
+
+************ Steps :
+
+Admin/CategoryController.php files code :
+
+
+*********************
+
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Category;
+use Session;
+
+class CategoryController extends Controller
+{
+    public function categories(){
+    	Session::put('page','categories');
+    	$categories = Category::get();
+    	//$categories = json_decode(json_encode($categories));
+    	//echo "<pre>"; print_r($categories);die();
+    	return view('admin.categories.categories')->with(compact('categories'));
+    }
+
+    public function updateCategoryStatus(Request $request){
+    	if($request->ajax()){
+    		$data = $request->all();
+    		//echo "<pre>"; print_r($data);die();
+    		if($data['status']=="Active"){
+    			$status = 0;
+    		}else{
+    			$status = 1;
+    		}
+    		Category::where('id',$data['category_id'])->update(['status'=>$status]);
+    		return response()->json(['status'=>$status,'category_id'=>$data['category_id']]);
+    	}
+    }
+}
+
+
+*********************
+
+After Create Script (public/js/admin_js/admin_script.js)  code here :
+
+
+$(document).ready(function () {
+	// Check Admin Password is Correct or not
+	$("#current_pwd").keyup(function(){
+
+		var current_pwd = $("#current_pwd").val();
+		//alert(current_pwd);
+		$.ajax({
+			type:'post',
+			url:'/admin/check-current-pwd',
+			data:{current_pwd:current_pwd},
+			success:function(resp){
+				//alert(resp);
+				if(resp=="false"){
+					$("#chkCurrentPwd").html("<font color=red> Current Password Is Incorrect </font>");
+				}else if(resp=="true"){
+					$("#chkCurrentPwd").html("<font color=green> Current Password Is Correct </font>");
+				}
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+
+	// Update Status in Sections Table Active or Inactive
+	$(".updateSectionStatus").click(function(){
+		var status = $(this).text();
+		var section_id = $(this).attr("section_id");
+		//alert(status +"&&"+section_id);
+		$.ajax({
+			type:'post',
+			url:'/admin/update-section-status',
+			data:{status:status,section_id:section_id},
+			success:function(resp){
+				//alert(resp['status']);
+				//alert(resp['section_id']);
+				if(resp['status']==0){
+					$("#section-"+section_id).html("<a class='updateSectionStatus' href='javascript:void(0)'>Inactive</a>");
+				}else if(resp['status']==1){
+					$("#section-"+section_id).html("<a class='updateSectionStatus' href='javascript:void(0)'>Active</a>");
+				}
+
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+
+	// Update Status in Category Table Active or Inactive
+	$(".updateCategoryStatus").click(function(){
+		var status = $(this).text();
+		var category_id = $(this).attr("category_id");
+		//alert(status +"&&"+category_id);
+		$.ajax({
+			type:'post',
+			url:'/admin/update-category-status',
+			data:{status:status,category_id:category_id},
+			success:function(resp){
+				//alert(resp['status']);
+				//alert(resp['category_id']);
+				if(resp['status']==0){
+					$("#category-"+category_id).html("<a class='updateCategoryStatus' href='javascript:void(0)'>Inactive</a>");
+				}else if(resp['status']==1){
+					$("#category-"+category_id).html("<a class='updateCategoryStatus' href='javascript:void(0)'>Active</a>");
+				}
+			},error:function(){
+				alert("Error");
+			}
+		});
+	});
+
+})
+
+*********************
+
+After Csrf token hide in Using files :   middleware/VerifyCsrfToken.php 
+
+hide here her post url :
+
+
+code this type : 
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
+
+class VerifyCsrfToken extends Middleware
+{
+    /**
+     * The URIs that should be excluded from CSRF verification.
+     *
+     * @var array
+     */
+    protected $except = [
+        // using this we want csrf token is skip there (so add url here )
+        "/admin/check-current-pwd","admin/update-section-status","admin/update-category-status"
+    ];
+}
+
+
+******************
+
+Create her Route/web.php file code : 
+
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+/*
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+Route::get('admin/register', function () {
+    return view('admin/auth/register');
+});
+
+Route::get('admin/login', function () {
+    return view('admin/auth/login');
+});
+
+
+Route::get('/', function () {
+    return view('userview/index');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+*/
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/admin')->namespace('Admin')->group(function(){
+	// All the Admin Routes will be defined here :-
+	//Route::match(['get','post'],'/','AdminController@login');
+	//Route::get('dashboard','AdminController@dashboard');
+	Route::match(['get','post'],'/','AdminController@login');
+	Route::group(['middleware' => ['admin']],function(){
+		Route::get('dashboard','AdminController@dashboard');
+		Route::get('settings','AdminController@settings');
+		Route::get('logout','AdminController@logout');
+		Route::post('check-current-pwd','AdminController@check_current_pwd');
+		Route::post('update-current-pwd','AdminController@update_current_pwd');
+		Route::match(['get','post'],'update-admin-details','AdminController@UpdateAdminDetails');
+
+		//sections Routes
+		Route::get('sections','SectionController@sections');
+		Route::post('update-section-status','SectionController@updateSectionStatus');
+
+		//categories Routes
+		Route::get('categories','CategoryController@categories');
+		Route::post('update-category-status','CategoryController@updateCategoryStatus');
+
+	});	
+});
+
+
+
+------------------------------------
+
+view/admin/categories/categories.blade.php   file code :
+
+
+@extends('layouts.admin_layout.admin_layout')
+@section('content')
+<div class="content-wrapper">
+<!-- Main content -->
+	<div class="content-header">
+      <div class="container-fluid">
+         <div class="row mb-2">
+            <div class="col-sm-6">
+               <h1 class="m-0 text-dark">Categories</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+               <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Home</a></li>
+                  <li class="breadcrumb-item active">Categories</li>
+               </ol>
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+   </div>
+	<section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Categories</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="sections" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  @foreach($categories as $category)
+                  <tr>
+                    <td>{{ $category->id }}</td>
+                    <td>{{ $category->category_name }}</td>
+                    <td>{{ $category->url }}</td>
+                    <td>
+                      @if($category->status ==1)
+                        <a class="updateCategoryStatus" id="category-{{ $category->id }}" category_id="{{ $category->id }}" href="javascript:void(0)">Active</a>
+                      @else
+                        <a class="updateCategoryStatus" id="category-{{ $category->id }}" category_id="{{ $category->id }}" href="javascript:void(0)">Inactive</a>
+                      @endif
+                    </td>
+                  </tr>
+                  @endforeach
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+	      <!-- /.container-fluid -->
+	</section>
+<!-- /.content -->
+</div>
+@endsection
+
+
+_________________________________________________________________________________
+Please check using ajax update status in Categories table in Laravel project .
+
+
+**********************************************************************************
+Que : How to install Sweat Alert in page.
+
+link :  https://sweetalert2.github.io/
+
+// How to install sweat alert in Project jquery Lib :
+
+#cmd :  npm install sweetalert2
+#cmd :  npm install -g npm
+
+
+After set this link in her laytout page :
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+and working all data.
+
+
+*********************************************************************************
+
+Que : How to create table but some issue then I want to delete it then :
+
+Ans : Goto database and select table ( goto Oprations link and drop the table) ==>  After open her migrations table open the migration last table and selected then delete it . After Goto the Oprations and Sql autoincreaments changing to (if 7 auto increment value then set 6 and goto) .
+
+After Run the command table created once again .
+
+#cmd :  php artisan migrate.
+
+
+**********************************************************************************
+
+How to upload video in laravel project (some changes in Php .ini file)
+
+steps :
+
+code :
+
+controller :
+
+// Upload Product Video
+            if($request->has('product_video')){
+                $video_tmp = $request->file('product_video');
+                //echo "@@@@@@@@@@@@@@@@@@111";die;
+                //if($video_tmp->isValid()){
+                $videoname = $video_tmp->getClientOriginalName();
+                $extension = $video_tmp->getClientOriginalExtension();
+                if($extension=="mp4"){
+                    //echo "<pre>"; print_r($videoname);die;
+                    //$videoName = $videoname.'-'.rand(100000,9999999).'.'.$extension;
+                    $videoName = rand(100000,9999999).'.'.$extension;
+                    $video_path = 'videos/product_videos/';
+                    $video_tmp->move($video_path,$videoName);
+                    //Image::make($video_tmp)->save($video_path);
+                    $product->product_video = $videoName;
+                    //echo "<pre>"; print_r($videoName);die;
+                    //echo "@@@@@@@@@@@@@@@@@@222";die;
+                    //echo "<pre>"; print_r($data);die;
+                }
+            }
+************************************************
+
+
+files changes : 
+
+php.ini : 
+
+upload_max_filesize = 2M    ===>  10M
+post_max_size = 10M
+memory_limit=128M     ===>   128M
+
+
+
+**************************************************
+Que :  How to solve the not required fields in database no set any (required field so not get any error ?)
+
+solution : 
+
+Goto the (database.php in config folder and set here one things.) 
+
+// Database error not display here (if you want to submit her blank input data.)
+
+============>
+
+Goto Config/database.php file 
+
+'strict' => false ,
+
+Sol this problem is easy..
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+*************************************************************
+
